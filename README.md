@@ -1,7 +1,10 @@
 # TERMUX
-apt update && apt upgrade 
 
-apt install python3
+termux-setup-storage && apt update && apt upgrade && pkg install php && pkg install python && pkg install git && pkg install wget && pip install --upgrade pip && pip install requests && pip install pycurl
+
+pip install requests
+
+pip install bs4
 
 apt install git
 
@@ -9,5 +12,5 @@ git clone https://github.com/ngochuyen2016/spam-sms.git
 
 cd spam-sms 
 
-python3 main.py
+python main.py
 
